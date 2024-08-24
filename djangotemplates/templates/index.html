@@ -1,0 +1,60 @@
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <div class="tables">
+        <h1 align="center">Employee Table </h1>
+        <table>
+        
+           <tr>
+               <td>Name</td>
+               <td>Age</td>
+               <td>Salary</td>
+           </tr>
+        
+  
+            {% for name in names %}
+           <tr>
+               <td>{{name}}</td>
+               <td></td>
+               <td></td>
+           </tr>
+           {% endfor %}
+
+        </table>
+    </div>
+
+    {% for salary in salaries %}
+    {% if salary > 40000 %}
+    <h1>{{salary}}</h1>
+    {% endif %}
+    {% endfor %}
+<!-- 
+    <div>
+    
+    {% for name in names%}
+    <h1>{{name}}</h1>
+    {% endfor %}
+</div>
+    
+<div>
+    {% for age in ages%}
+    <h1>{{age}}</h1>
+    {% endfor %}
+</div>
+    
+    <div>
+    {% for salary in salaries%}
+    <h1>{{salary}} </h1>
+    {% endfor %}
+    </div> -->
+
+   <h1> {{job}}</h1>
+</body>
+</html>

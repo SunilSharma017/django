@@ -1,0 +1,25 @@
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database connection</title>
+</head>
+<body>
+
+    <h1>Registration Form </h1>
+    <form action="{% url 'Home' %}" method="post">
+        {% csrf_token %}
+
+        <label>Name</label><br>
+        <input type="text" name="n1"><br>
+        <label>Email</label><br>
+        <input type="email" name="n2"><br>
+        <label>Password</label><br>
+        <input type="password" name="n3"><br>
+        <button >submit</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{%static '/css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methods </title>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+    <form action="{% url 'About' %}" method="post">
+        {% csrf_token %}
+        <label>username</label><br>
+        <input type="text" placeholder="enter your name" name="n1"><br>
+        <label>useremail</label><br>
+        <input type="email" placeholder="enter your email" name="n2"><br>
+        <label>password</label><br>
+        <input type="password" placeholder="enter your password" name="n3"><br>
+     
+        <label>Gender</label><br>
+        <input type="radio" name="rad" value="male">male
+        <input type="radio" name="rad" value="female">female
+        <input type="radio" name="rad" value="others">others  <br>
+        <label>Job Type</label><br>
+        <input type="checkbox" name="check" value="Assistant software Engineer">Assistant Software Engineer<br>
+        <input type="checkbox" name="check" value="Senior Software Engineer">Senior Software Engineer<br>
+        <input type="checkbox" name="check" value="Software Engineer">Software Engineer<br>
+        <button>Login</button>
+    </form>
+    
+</body>
+</html>

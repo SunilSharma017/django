@@ -1,0 +1,18 @@
+
+
+{% include 'header.html' %}
+    <form action="{% url 'Sign' %}" method="post">
+        {% csrf_token %}
+        <label>Principal Value</label><br>
+        <input type="text" name="n1"><br>
+        <label>Rate</label><br>
+        <input type="text" name="n2"><br>
+        <label>Time</label><br>
+        <input type="text" name="n3"><br>
+        <button>getInterest</button>
+        
+
+    </form>
+    
+    <div class="sim" style="color:white;background-color:black;margin-left:20vw;margin-top:10vh;font-size:30px;width:30vw;">simple interest is : {{si}}</div>
+  {% include 'footer.html' %}

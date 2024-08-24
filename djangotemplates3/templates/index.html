@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    
+    <!-- {% for i in lst %}
+     <h1>{{i}}</h1>
+    {% endfor %} -->
+
+    <!-- {% for i in names %}
+
+    <h1>{{i}}</h1>
+
+    {% endfor %} -->
+
+    
+    <!-- {% for j in marks %}
+
+    <h1>{{j}}</h1>
+
+
+    {% endfor %} -->
+
+    {% for j in marks %}
+      {% if j > 85 %}
+    <h1>{{j}}</h1>
+      {% endif %}
+    
+
+    {% endfor %}
+
+    <h3>{{course}}</h3>
+
+</body>
+</html>

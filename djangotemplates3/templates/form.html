@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email data</title>
+</head>
+<body>
+
+    <form action="{% url 'EmailFile' %}" method="post">
+        {% csrf_token %}
+        <label>Name</label><br>
+        <input type="text" name="n1"><br>
+        <label>Email</label><br>
+        <input type="email" name="n2"><br>
+        <label>File</label><br>
+        <input type="file" accept=".jpg,.pdf,.png" name="n3"><br>
+
+        <button>submit</button>
+    </form>
+    
+</body>
+</html>

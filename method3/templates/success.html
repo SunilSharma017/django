@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+              <div class="submenu">
+                <a href="{% url 'Home' %}">Home</a>
+              </div>
+              <div class="submenu">
+                <a href="{% url 'About' %}">About</a>
+              </div>
+              <div class="submenu">
+                <a href="{% url 'Download' %}">Downloads</a>
+              </div>
+              <div class="submenu">
+                <a href="{% url 'Login' %}">Login</a>
+              </div>
+              <div class="submenu">
+                <a href="{% url 'Sign' %}">SignIn</a>
+              </div>
+              <div class="submenu">
+                <a href="{% url 'Contact' %}">Contact</a>
+              </div>
+              
+        </div>
+    </header>
+
+
+  <h3>You are trying to findout simple interest and your simple interest is given below </h3>
+
+  <div>principal vlaue is : {{p}}</div>
+  <div>rate vlaue is : {{r}}</div>
+  <div>time vlaue is : {{t}}</div>
+    
+    <div class="sim" style="color:white;background-color:black;margin-left:20vw;margin-top:10vh;font-size:30px;width:30vw;">simple interest is : {{si}}</div>
+    
+</body>
+</html>

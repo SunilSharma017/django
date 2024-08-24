@@ -1,0 +1,31 @@
+h1{
+    background-color:red;
+    color:white;
+    text-align: center;
+}
+
+form{
+    margin-left:30vw;
+    margin-top:10vh;
+}
+
+label{
+    font-size:30px;
+    font-weight:bold;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    width:40vw;
+    height:40px;
+    font-size:30px;
+    font-weight: bold;
+}
+
+button{
+    width:10vw;
+    height:40px;
+    font-size:25px;
+    background-color:blue;
+    color:white;
+    margin-left:10vw;
+    margin-top:5vh;
+}

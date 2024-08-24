@@ -1,0 +1,27 @@
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static '/css/style.css'%}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="{% url 'Result' %}" method="post">
+        {% csrf_token%}
+        <label>Enter first number</label><br>
+        <input type="text" name="num1"><br>
+        <label>Enter second number</label><br>
+        <input type="text" name="num2"><br>
+        <button>get addition result </button>
+    </form>
+    
+    <!-- <div class="result" >
+        <h1>First number is  : {{num1}}</h1>
+        <h1>Second number is : {{num2}}</h1>
+         <h1>Addition of both number is : {{result}}</h1>
+        </div> -->
+
+  </body>
+</html>

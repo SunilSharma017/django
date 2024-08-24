@@ -1,0 +1,17 @@
+td{
+    width:10vw;
+    font-size:30px;
+    background-color:red;
+    color:white;
+}
+.tables{
+    margin-left:20vw;
+    margin-top:20vh;
+    width:30vw;
+    background-color:blue;
+    color:yellow;
+}
+
+h1{
+    color:black;
+}

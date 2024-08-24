@@ -1,0 +1,27 @@
+input{
+    width:40vw;
+    height:40px;
+    font-size:30px;
+
+}
+form{
+    margin-left:20vw;
+    margin-top:20vh;
+}
+
+label{
+    font-size:30px;
+}
+
+button{
+    font-size:25px;
+    background-color:orange;
+    color:black;
+    border:3px solid black;
+    margin-left:10vw;
+    margin-top:5vh;
+}
+.result{
+    margin-left:20vw;
+     margin-top:10vh;
+}

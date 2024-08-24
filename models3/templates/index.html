@@ -1,0 +1,22 @@
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="{% url 'Welcome' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Name</label><br>
+        <input type="text" name="n1"><br>
+        <label>Photo</label><br>
+        <input type="file" accept=".png,.jpg,.jpeg" name="n2">
+        <label>Resume</label>
+        <input type="file" accept=".pdf" name="n3"><br>
+        <button>submit</button>
+    </form>
+</body>
+</html>
